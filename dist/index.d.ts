@@ -1,5 +1,5 @@
 import { z, type ZodType } from 'zod';
-export declare const iGraphConnectionEdgeSchema: <ObjectType extends Record<string, unknown>>(objectTypeSchema: ZodType<ObjectType>) => z.ZodObject<{
+export declare const schemaFactory: <ObjectType>(objectTypeSchema: ZodType<ObjectType>) => z.ZodObject<{
     node: z.ZodType<ObjectType, z.ZodTypeDef, ObjectType>;
 }, "strip", z.ZodTypeAny, z.objectUtil.addQuestionMarks<z.baseObjectOutputType<{
     node: z.ZodType<ObjectType, z.ZodTypeDef, ObjectType>;
